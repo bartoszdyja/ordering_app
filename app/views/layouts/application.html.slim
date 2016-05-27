@@ -7,4 +7,6 @@ html ng-app="OrderingApp"
     = javascript_include_tag 'application'
     = csrf_meta_tags
   body
-    = yield
+    div ng-include="'_navbar.html'"
+    .container
+      = yield
