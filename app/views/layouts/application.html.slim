@@ -1,0 +1,9 @@
+doctype html
+html ng-app="Ordering app"
+  head
+    meta charset="utf-8"
+    title Monterail Ordering App
+    = stylesheet_link_tag 'application', media: 'all'
+    = csrf_meta_tags
+  body
+    = yield
