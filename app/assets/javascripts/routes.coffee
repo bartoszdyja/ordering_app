@@ -5,3 +5,7 @@ angular.module('OrderingApp').config ($stateProvider, $urlRouterProvider) ->
     url: '/',
     templateUrl: 'index.html'
   })
+  $stateProvider.state('login', {
+    url: '/login',
+    templateUrl: 'login.html'
+  })
