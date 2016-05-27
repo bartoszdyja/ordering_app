@@ -1,1 +1,1 @@
-angular.module('OrderingApp', [])
+angular.module('OrderingApp', ['ui.router', 'templates'])
