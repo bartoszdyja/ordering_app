@@ -9,12 +9,14 @@ gem 'jquery-rails'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'slim'
-gem 'angular-rails-templates'
+gem 'angular-rails-templates', '>= 1.0.0.beta2'
+gem 'faraday'
 
 source 'https://rails-assets.org' do
   gem 'rails-assets-angular'
   gem 'rails-assets-angular-ui-router'
   gem 'rails-assets-bootstrap'
+  gem 'rails-assets-satellizer'
 end
 
 group :development, :test do

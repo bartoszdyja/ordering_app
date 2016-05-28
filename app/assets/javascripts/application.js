@@ -13,9 +13,11 @@
 //= require angular
 //= require angular-ui-router
 //= require angular-rails-templates
+//= require satellizer
 //= require jquery
 //= require bootstrap
 //= require jquery_ujs
 //= require ./init
 //= require ./routes
+//= require ./controllers
 //= require_tree ./templates

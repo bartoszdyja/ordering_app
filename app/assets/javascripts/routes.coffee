@@ -7,5 +7,6 @@ angular.module('OrderingApp').config ($stateProvider, $urlRouterProvider) ->
   })
   $stateProvider.state('login', {
     url: '/login',
+    controller: 'LoginCtrl',
     templateUrl: 'login.html'
   })
