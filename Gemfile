@@ -18,6 +18,7 @@ source 'https://rails-assets.org' do
   gem 'rails-assets-angular-ui-router'
   gem 'rails-assets-bootstrap'
   gem 'rails-assets-satellizer'
+  gem 'rails-assets-angular-resource'
 end
 
 group :development, :test do

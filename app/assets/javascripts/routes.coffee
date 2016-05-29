@@ -1,4 +1,6 @@
-angular.module('OrderingApp').config ($stateProvider, $urlRouterProvider) ->
+app = angular.module('OrderingApp')
+
+app.config ($stateProvider, $urlRouterProvider) ->
   $urlRouterProvider.otherwise('/');
 
   $stateProvider.state('home', {
@@ -9,4 +11,9 @@ angular.module('OrderingApp').config ($stateProvider, $urlRouterProvider) ->
     url: '/login',
     controller: 'LoginCtrl',
     templateUrl: 'login.html'
+  })
+  $stateProvider.state('user', {
+    url: '/user',
+    controller: 'UserCtrl',
+    templateUrl: 'profile.html'
   })

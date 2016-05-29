@@ -13,6 +13,7 @@
 //= require angular
 //= require angular-ui-router
 //= require angular-rails-templates
+//= require angular-resource
 //= require satellizer
 //= require jquery
 //= require bootstrap
