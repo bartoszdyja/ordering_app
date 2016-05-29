@@ -27,3 +27,8 @@ app.config ($stateProvider, $urlRouterProvider) ->
     controller: 'OrderCtrl',
     templateUrl: 'order.html'
   })
+  $stateProvider.state('orders', {
+    url: '/orders',
+    controller: 'OrdersCtrl',
+    templateUrl: 'orders.html'
+  })

@@ -13,6 +13,9 @@ nav.navbar.navbar-default role="navigation" ng-controller="LoginCtrl"
           a href='/#/user' ng-show='isAuthenticated()'
             | Profile
         li
+          a href='/#/orders' ng-show='isAuthenticated()'
+            | Orders
+        li
           a href='/#/new_order' ng-show='isAuthenticated()'
             | Add New Order
       ul.nav.navbar-nav.navbar-right

@@ -1,2 +1,30 @@
-h1 Order: {{order.name}}
-p Status: {{order.status}}
+.container
+  .row
+    .col-md-8
+      h1 Order: {{order.name}}
+    .col-md-4
+      h3 Status: {{order.status}}
+      button.btn.btn-primary ng-click='updateOrder()' ng-hide='orderFinished()' Update Status
+  .row ng-hide='orderFinished()'
+    h3 Add your meal:
+    form.form-inline name="orderForm"  ng-submit="addMeal()"
+      .form-group
+        label Name:
+        input.form-control type='text' ng-model='meal.name' required="true"
+      .form-group
+        label Price:
+        input.form-control type='number' ng-model='meal.price' required="true"
+      button.btn.btn-primary type='submit'  ng-click="submitted=true" Add
+      hr
+  .row
+  table.table.table-striped
+    caption Meals
+    tr
+      th Name
+      th Price
+    tr ng-repeat="meal in order.meals"
+      td 
+        | {{meal.name}}
+      td 
+        | {{meal.price}}
+  

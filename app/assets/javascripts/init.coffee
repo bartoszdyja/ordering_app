@@ -19,3 +19,21 @@ app.factory 'Order', ($resource) ->
     'show':
       method: 'GET'
       isArray: false
+    'index':
+      method: 'GET'
+      isArray: true
+    'update':
+      method: 'PUT'
+
+app.factory 'Meal', ($resource) ->
+  $resource '/api/meals/:id', { id: '@id' },
+    'create':
+      method: 'POST'
+    'show':
+      method: 'GET'
+      isArray: false
+    'update':
+      method: 'PUT'
+    'index':
+      method: 'GET'
+      isArray: true

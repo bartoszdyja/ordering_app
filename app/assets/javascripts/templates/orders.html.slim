@@ -1,0 +1,12 @@
+input type="checkbox" ng-model="checkboxModel.value" ng-true-value="'active'" ng-false-value="''"  - show only active orders.
+table.table.table-striped
+  caption Orders
+  tr
+    th Name
+    th Status
+  tr ng-repeat="order in orders | filter:{ status: checkboxModel.value }"
+    td 
+      a ng-href="/#/order/{{order.id}}" {{order.name}}
+    td 
+      | {{order.status}}
+  
