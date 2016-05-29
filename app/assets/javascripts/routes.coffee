@@ -17,3 +17,13 @@ app.config ($stateProvider, $urlRouterProvider) ->
     controller: 'UserCtrl',
     templateUrl: 'profile.html'
   })
+  $stateProvider.state('new_order', {
+    url: '/new_order',
+    controller: 'NewOrderCtrl',
+    templateUrl: 'new_order.html'
+  })
+  $stateProvider.state('order', {
+    url: '/order/:orderId',
+    controller: 'OrderCtrl',
+    templateUrl: 'order.html'
+  })

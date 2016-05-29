@@ -1,0 +1,7 @@
+.container
+  h1 Add new order
+  form.form-inline
+    .form-group
+      label Restaurant name:
+      input.form-control type='text' ng-model='order.name'
+    button.btn.btn-primary type='submit'  ng-click='addOrder()' Add

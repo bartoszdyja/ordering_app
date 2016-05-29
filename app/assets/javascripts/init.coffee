@@ -11,3 +11,11 @@ app.factory 'User', ($resource) ->
     'show':
       method: 'GET'
       isArray: false
+
+app.factory 'Order', ($resource) ->
+  $resource '/api/orders/:id', { id: '@id' },
+    'create':
+      method: 'POST'
+    'show':
+      method: 'GET'
+      isArray: false
