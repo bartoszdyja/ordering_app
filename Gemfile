@@ -11,6 +11,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'slim'
 gem 'angular-rails-templates', '>= 1.0.0.beta2'
 gem 'faraday'
+gem 'jwt'
 
 source 'https://rails-assets.org' do
   gem 'rails-assets-angular'
