@@ -1,6 +1,7 @@
 class User < ActiveRecord::Base
   has_many :meals
   has_many :orders, through: :meals
+  validates :email, :username, presence: true
 
   def self.from_oauth(profile)
     user = User.where(email: profile['email']).first_or_create do |u|

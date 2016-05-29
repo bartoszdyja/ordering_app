@@ -7,7 +7,7 @@ class ApplicationController < ActionController::Base
   end
 
   def unauthorized!
-    render json: 'Unauthorized', status: 404
+    render json: 'Unauthorized', status: 401
   end
 
   def set_current_user
